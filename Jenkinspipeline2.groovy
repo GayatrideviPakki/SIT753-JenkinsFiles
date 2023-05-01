@@ -20,7 +20,7 @@ pipeline{
         }
         stage('Code Analysis'){
             steps{
-                echo "check the quality of the code"
+                echo "Analyse Code"
             }
         }
         stage('Security Scan'){
