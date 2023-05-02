@@ -25,7 +25,7 @@ pipeline{
         }
         stage('Security Scan'){
             steps{
-                echo "deploy the application to testing environment: $TESTING_ENVIRONMENT"
+                echo "Security Scan on: $TESTING_ENVIRONMENT"
             }
             post{
                 success{
