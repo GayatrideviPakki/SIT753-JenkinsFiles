@@ -31,12 +31,12 @@ pipeline{
                 success{
                     mail to: "gayatridevikagapu@gmail.com",
                     subject: "Test Jenkins Email",
-                    body: "success"
+                    body: "Security Scan success"
                 }
                 failure {  
                     mail to: "gayatridevikagapu@gmail.com",
                     subject: "Test Jenkins Email",
-                    body: "Failure"  
+                    body: "Security Scan Failure"  
                 }
             }
         }
