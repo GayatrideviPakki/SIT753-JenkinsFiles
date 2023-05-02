@@ -43,7 +43,7 @@ pipeline{
         stage('Integration Tests on Staging'){
             steps{
                 echo "Approval stage.."
-                sleep 10
+                sleep 5
             }
             post{
                 success{
