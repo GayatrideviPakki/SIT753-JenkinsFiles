@@ -14,7 +14,7 @@ pipeline{
         }
         stage('Unit and Integration Tests'){
             steps{
-                echo "unit tests running in this stage.. "
+                echo "unit test is running in this stage.. "
                 echo "integration tests running ....! "
             }
         }
