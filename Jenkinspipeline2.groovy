@@ -86,6 +86,7 @@ pipeline{
                     body: 'Deploy to Production environment is finished and build log is available at $JENKINS_HOME/jobs/$JOB_NAME/builds/lastSuccessfulBuild/log',
                     subject: "Deployment to Production Failed - Jenkins"  
                 }
+            }
         }
     }
 }
