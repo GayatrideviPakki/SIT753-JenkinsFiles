@@ -30,15 +30,13 @@ pipeline{
             }
             post{
                 success{
-                    emailext attachLog: true,
-                    compressLog: true,
-                    to: 'gayatridevikagapu@gmail.com',
+                    emailext to: 'gayatridevikagapu@gmail.com',
                     body: 'Security Scan Successfule. please find more details in the log file',
                     subject: 'Security Scan Success - Jenkins'
                 }
                 failure {  
                     emailext to: "gayatridevikagapu@gmail.com",
-                    subject: "Test Jenkins Email - Jenkins",
+                    subject: "Security Scan Failure - Jenkins",
                     body: "Security Scan Failure"  
                 }
             }
@@ -56,12 +54,12 @@ pipeline{
             post{
                 success{
                     emailext to: "gayatridevikagapu@gmail.com",
-                    subject: "Test Jenkins Email - Jenkins",
-                    body: "success"
+                    subject: "Testing in staging is Success - Jenkins",
+                    body: "Success"
                 }
                 failure {  
                     emailext to: "gayatridevikagapu@gmail.com",
-                    subject: "Test Jenkins Email - Jenkins",
+                    subject: "Testing in staging failed - Jenkins",
                     body: "Failure"  
                 } 
             }
