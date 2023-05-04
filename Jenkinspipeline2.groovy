@@ -30,7 +30,8 @@ pipeline{
             post{
                 success{
                     emailext attachLog: true,
-                    body: 'Security Svan Success',
+                    to: 'gayatridevikagapu@gmail.com'
+                    body: 'Security Scan Success',
                     subject: 'Jenkins Email notification'
                 }
                 failure {  
