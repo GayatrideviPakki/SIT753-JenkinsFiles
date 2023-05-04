@@ -75,7 +75,7 @@ pipeline{
                     compressLog: true,
                     to: 'gayatridevikagapu@gmail.com',
                     body: 'Deploy to Production environment is finished and build log is available at $JENKINS_HOME/jobs/$JOB_NAME/builds/lastSuccessfulBuild/log',
-                    subject: 'Deployment to Production Failed is Success - Jenkins'
+                    subject: 'Deployment to Production is Success - Jenkins'
                 }
                 failure {  
                     emailext attachLog: true,
