@@ -29,9 +29,9 @@ pipeline{
             }
             post{
                 success{
-                    mail to: "gayatridevikagapu@gmail.com",
-                    subject: "Test Jenkins Email",
-                    body: "Security Scan success"
+                    emailext attachLog: true,
+                    body: 'Security Svan Success',
+                    subject: 'Jenkins Email notification'
                 }
                 failure {  
                     mail to: "gayatridevikagapu@gmail.com",
