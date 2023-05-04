@@ -42,7 +42,9 @@ pipeline{
                     body: "Security Scan Failure"  
                 }
             }
-            echo "Security Scan ended. Check the log file for more details"
+            steps{
+                echo "Security Scan ended. Check the log file for more details"
+             }
         }
         stage('Deploy to Staging'){
             steps{
