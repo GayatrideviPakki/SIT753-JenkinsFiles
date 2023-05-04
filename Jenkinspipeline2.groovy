@@ -35,6 +35,7 @@ pipeline{
                     to: 'gayatridevikagapu@gmail.com',
                     body: 'Security Scan Successfule. please find more details in the log file',
                     subject: 'Security Scan Success - Jenkins'
+                }
                 failure {  
                     emailext to: "gayatridevikagapu@gmail.com",
                     subject: "Test Jenkins Email - Jenkins",
